@@ -1,0 +1,32 @@
+This is a small program to study how dictionary attacks are done.
+
+
+How to run the program ?
+
+1. Open terminal type 'make', all the C files are compiled.
+
+2. Type 
+	./unshadow <SHADOW-FILE> <PASSWD-FILE>
+
+   This command will combine the shadow file and passwd file to create an unshadow file. 
+
+3. Type 
+	./guessword <UNSHADOW-FILE> <DICTIONARY-FILE>
+   This command finds the username and passwords and stores in allcrackedpasswords.txt
+
+4. Type
+	vim allcrackedpasswords.txt
+   This command is used to view the cracked passwords list
+ 
+
+Files included are : 
+
+<SHADOW-FILE> : training-shadow.txt
+<PASSWD-FILE> : training-passwd.txt
+
+<UNSHADOW-FILE>   : passwordfile.txt
+<DICTIONARY-FILE> : top250.txt
+
+Cracked (username:password)-file : allcrackedpasswords.txt
+
+
