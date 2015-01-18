@@ -8,12 +8,12 @@ How to run the program ?
 1. Open terminal type 'make', all the C files are compiled.
 
 2. Type 
-	./unshadow <SHADOW-FILE> <PASSWD-FILE>
+	./unshadow SHADOW-FILE PASSWD-FILE
 
    This command will combine the shadow file and passwd file to create an unshadow file. 
 
 3. Type 
-	./guessword <UNSHADOW-FILE> <DICTIONARY-FILE>
+	./guessword UNSHADOW-FILE DICTIONARY-FILE
    This command finds the username and passwords and stores in allcrackedpasswords.txt
 
 4. Type
@@ -23,10 +23,10 @@ How to run the program ?
 
 Files included are : 
 
-<SHADOW-FILE> : training-shadow.txt
-<PASSWD-FILE> : training-passwd.txt
+SHADOW-FILE : training-shadow.txt
+PASSWD-FILE : training-passwd.txt
 
-<UNSHADOW-FILE>   : passwordfile.txt
-<DICTIONARY-FILE> : top250.txt
+UNSHADOW-FILE   : passwordfile.txt
+DICTIONARY-FILE : top250.txt
 
 Cracked (username:password)-file : allcrackedpasswords.txt
